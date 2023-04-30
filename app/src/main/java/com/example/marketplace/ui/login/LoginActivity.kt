@@ -19,20 +19,20 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val s = Prefs(this)
-        if (s.getIsLogin()){
+        if (s.getIsLogin()) {
             binding.tvStatus.text = "SUDAH LOGIN"
-        }else binding.tvStatus.text = "BELUM LOGIN"
+        } else binding.tvStatus.text = "BELUM LOGIN"
 
-        binding.btnLogin.setOnClickListener{
+        binding.btnLogin.setOnClickListener {
             s.setIsLogin(true)
             onBackPressed()
         }
 
-        binding.btnLogout.setOnClickListener{
+        binding.btnLogout.setOnClickListener {
             s.setIsLogin(false)
             onBackPressed()
         }
 
-        Log.d("RESPON", "PESAN SINGKAT")
+        Log.d("RESPOM", "PESAN SINGKAT")
     }
 }

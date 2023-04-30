@@ -30,6 +30,7 @@
             android:exported="true">
 
         </activity>
+        <activity android:name="com.example.marketplace.ui.login.LoginActivity" />
     </application>
 
 </manifest>
