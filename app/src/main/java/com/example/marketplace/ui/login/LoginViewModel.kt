@@ -1,10 +1,11 @@
-package com.example.marketplace.ui.home
+package com.example.marketplace.ui.login
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.marketplace.core.data.repository.AppRepository
 
-class HomeViewModel : ViewModel() {
+class LoginViewModel(val repo:AppRepository) : ViewModel(){
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is home Fragment"
@@ -14,4 +15,5 @@ class HomeViewModel : ViewModel() {
     fun ubahData(){
         _text.postValue("Berubah kan")
     }
+
 }
