@@ -22,7 +22,7 @@ class LoginActivity : AppCompatActivity() {
         _binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        Log.d("RESPOM", "PESAN SINGKAT")
+        Log.d("RESPON", "PESAN SINGKAT")
 
         setData()
     }

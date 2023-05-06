@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="Hai Ini Dashboardnya"
         android:textColor="#030303"
-        android:textSize="@dimen/_35ssp"
+        android:textSize="@dimen/_30ssp"
         android:textStyle="bold" />
 
     <TextView
