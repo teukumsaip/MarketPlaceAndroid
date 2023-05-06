@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -14,21 +15,13 @@
         android:layout_height="wrap_content"
         android:text="Hei I'm Developer"
         android:textStyle="bold"
-        android:textSize="50dp"
-        android:textColor="#030303"/>
-
-    <TextView
-        android:id="@+id/tv_deskripsi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="If You Like this video, please"
-        android:textStyle="bold"
         android:textSize="30dp"
         android:textColor="#030303"/>
+
 
     <ImageView
         android:id="@+id/btn_test"
         android:layout_width="wrap_content"
-        android:layout_height="130dp"
+        android:layout_height="50dp"
         android:src="@drawable/ic_clickhere"/>
 </LinearLayout>
