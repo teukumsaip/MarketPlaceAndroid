@@ -13,6 +13,9 @@ interface ApiService {
         //@BODY user: User
     ): Response<RequestBody>
 
-
-
+    //"https://127.0.0.1:8000/api/register"
+    @POST("register")
+    suspend fun register(
+        //@BODY user: User
+    ): Response<RequestBody>
 }
