@@ -36,6 +36,23 @@
 
         </activity>
         <activity android:name="com.teukkun.marketplace.ui.auth.LoginActivity" />
+        <activity android:name="com.teukkun.marketplace.ui.auth.RegisterActivity" />
+        <activity android:name="com.teukkun.marketplace.ui.updateProfile.UpdateProfileActivity" />
+        <activity android:name="com.teukkun.marketplace.ui.toko.BukaTokoActivity" />
+        <activity android:name="com.teukkun.marketplace.ui.toko.TokoSayaActivity" />
+        <activity android:name="com.teukkun.marketplace.ui.alamatToko.ListAlamatTokoActivity" />
+        <activity android:name="com.teukkun.marketplace.ui.alamatToko.TambahAlamatTokoActivity" />
+        <activity android:name="com.teukkun.marketplace.ui.alamatToko.EditAlamatTokoActivity" />
+        <activity android:name="com.teukkun.marketplace.ui.product.CreateProductActivity" />
+        <activity android:name="com.teukkun.marketplace.ui.product.ListProductTokoActivity" />
+        <activity android:name="com.teukkun.marketplace.ui.product.UpdateProductActivity" />
+        <activity android:name="com.teukkun.marketplace.ui.category.ListCategoryAdminActivity" />
+        <activity android:name="com.teukkun.marketplace.ui.adminPanel.AdminPanelActivity" />
+        <activity android:name="com.teukkun.marketplace.ui.category.CreateCategoryActivity" />
+        <activity android:name="com.teukkun.marketplace.ui.category.SelectCategoryActivity" />
+        <activity android:name="com.teukkun.marketplace.ui.slider.ListSliderAdminActivity" />
+        <activity android:name="com.teukkun.marketplace.ui.slider.CreateSliderActivity" />
+        <activity android:name="com.teukkun.marketplace.ui.product.DetailProductActivity" />
     </application>
 
 </manifest>
