@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".MainActivity">
+    tools:context="com.teukkun.marketplace.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@
                 android:hint="Email"
                 android:inputType="textEmailAddress"
                 android:paddingStart="0dp"
-                tools:ignore="InvalidId" />
+                android:text="teuku1@gmail.com" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -36,13 +36,15 @@
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:background="@color/white"
                 android:hint="Password"
                 android:inputType="textPassword"
-                android:paddingStart="0dp" />
+                android:paddingStart="0dp"
+                android:text="teuku123" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -51,7 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:layout_marginVertical="@dimen/_15sdp"
-            android:text="Lupa kata sandi"
+            android:text="Lupa kata sandi?"
             android:textColor="@color/colorPrimary" />
 
         <com.google.android.material.button.MaterialButton
@@ -59,7 +61,8 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_45sdp"
             android:text="Masuk"
-            android:textAllCaps="false" />
+            android:textAllCaps="false"
+            android:textSize="@dimen/_13sdp" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -71,8 +74,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_centerVertical="true"
-                android:layout_toLeftOf="@id/text1"
-                android:background="#B5B4B4" />
+                android:layout_toLeftOf="@+id/text1"
+                android:background="#D3D3D3" />
 
             <TextView
                 android:id="@+id/text1"
@@ -87,10 +90,9 @@
                 android:id="@+id/lineRight"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_centerInParent="true"
-                android:layout_toRightOf="@id/text1"
-                android:background="#868585" />
-
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text1"
+                android:background="#D3D3D3" />
 
         </RelativeLayout>
 
@@ -100,9 +102,10 @@
             android:layout_height="@dimen/_45sdp"
             android:text="Google"
             android:textAllCaps="false"
-            android:textColor="#868585"
+            android:textColor="#AAAAAA"
+            android:textSize="@dimen/_13sdp"
             app:icon="@drawable/ic_google"
-            app:iconSize="@dimen/_20sdp"
+            app:iconSize="@dimen/_19sdp"
             app:iconTint="@null" />
 
         <LinearLayout
@@ -119,51 +122,23 @@
                 android:text="Belum punya akun?" />
 
             <TextView
+                android:id="@+id/btn_daftar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Daftar"
                 android:textColor="@color/colorPrimary" />
 
-
         </LinearLayout>
-
 
     </LinearLayout>
 
-    <LinearLayout
+
+    <ProgressBar
+        android:id="@+id/pd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:orientation="vertical"
-        android:visibility="gone">
-
-        <TextView
-            android:id="@+id/tv_status"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:textSize="@dimen/_11sdp"
-            android:text="Login" />
-
-        <TextView
-            android:id="@+id/btn_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="10sp"
-            android:textSize="@dimen/_11sdp"
-            android:text="Login" />
-
-        <TextView
-            android:id="@+id/btn_logout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="10sp"
-            android:textSize="@dimen/_11sdp"
-            android:text="Logout" />
-
-    </LinearLayout>
+        android:visibility="gone" />
 
 
 </RelativeLayout>

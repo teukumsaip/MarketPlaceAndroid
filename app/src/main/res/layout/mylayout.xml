@@ -7,14 +7,14 @@
     android:background="#fff"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context="com.teukkun.marketplace.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hai Ini Dashboardnya"
+        android:text="Hai I'm Developer"
         android:textColor="#030303"
-        android:textSize="@dimen/_30ssp"
+        android:textSize="@dimen/_35ssp"
         android:textStyle="bold" />
 
     <TextView
@@ -28,6 +28,6 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="@dimen/_120sdp"
-        android:src="@drawable/ic_clickhere" />
+        android:src="@drawable/subscribe" />
 
 </LinearLayout>

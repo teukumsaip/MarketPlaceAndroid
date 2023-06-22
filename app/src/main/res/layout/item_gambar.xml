@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="@dimen/_80sdp"
+    android:layout_height="@dimen/_80sdp"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_centerInParent="true"
+        card_view:cardCornerRadius="@dimen/_5sdp"
+        card_view:cardElevation="0dp"
+        card_view:strokeColor="@color/gray4"
+        card_view:strokeWidth="0.5dp">
+
+        <ImageView
+            android:id="@+id/btn_addFoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_4sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/asset_addphotos" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/btn_close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_close_circle"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
